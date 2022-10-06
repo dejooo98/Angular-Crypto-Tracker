@@ -1,0 +1,116 @@
+.header {
+  height: 40%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+
+  h2 {
+    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.08;
+  }
+  h6 {
+    color: azure;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.07;
+  }
+}
+
+.banner {
+  background-image: url("../../assets/banner2.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 450px;
+  width: 100%;
+}
+.sub-header {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border: 0;
+  background: #000000b0;
+  color: #fff;
+  padding: 0;
+  margin: 40px;
+  width: 100px;
+  height: 200px;
+
+  img {
+    width: 70px;
+    margin: 0 auto;
+  }
+
+  h5 {
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 700;
+  }
+}
+.col-1 {
+  width: 10%;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+:host ::ng-deep .mat-sort-header-content {
+  color: #fff;
+}
+
+:host ::ng-deep .mat-paginator-outer-container {
+  background-color: #03a9f4;
+}
+
+:host ::ng-deep tr.mat-header-row {
+  background-color: #03a9f4;
+}
+
+:host ::ng-deep tr.mat-row {
+  height: 70px;
+}
+
+@media only screen and (max-width: 750px) {
+  .banner {
+    background-blend-mode: multiply;
+    background-color: darkkhaki;
+    width: fit-content;
+    height: 70%;
+    background-size: cover;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
+  .card {
+    background: transparent;
+    margin: 0 20px;
+    padding: 10px;
+    width: 120px;
+  }
+  .col-1 {
+    width: 20%;
+  }
+}
